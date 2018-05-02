@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ActionBar - Aula 08</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="action_refresh">Atualizar</string>
+    <string name="action_settings">Configurações</string>
+</resources>
