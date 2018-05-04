@@ -2,10 +2,12 @@ package com.example.diogenes.actionbar;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("teste");
+//        actionBar.setTitle("teste");
 
     }
 
@@ -45,5 +47,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void toast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
+
+    public void exibirHomeUpActivity(View view) {
+        Intent i = new Intent(this, HomeAsUpActivity.class);
+        startActivity(i);
     }
 }
